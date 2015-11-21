@@ -15,8 +15,8 @@
         deferred.notify('Fetching GitHub username.');
 
         $.get('https://github.com',function (data) {
-            var name = $(data).find('#user-links .name').text().trim();
-
+            //var name = $(data).find('#user-links .name').text().trim();
+            var name = 'bandwidthcom'
             if (name.length) {
                 deferred.resolve(name);
             } else {
